@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweetr Delights Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <img src="./cookies and coffee.jpeg"
+        alt="cookiesandcoffee" class="outside-image">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" alt="Sweetr Logo"
+            src="./Logo.jpeg"
+            height="100">
+    </div>
+
+    <div class="container">
+        <header class="header>">
+            <h1 id="title" class="title text-center">Sweetr Delights Survey Form
+                <h1>
+                    <p id="description" class="description text-center">
+                        Answering this survey will help us improve our product and services for sweeth-toothed people
+                        just
+                        like you
+                        &#x1F90E
+                    </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name <span class="clue">(optional)</span></label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>Out of these choices ,what do you prefer to drink?
+                <p>
+                    <select id="dropdown" name="preffereddrink" class="form-control" required>
+                        <option disabled selected value>Select preferred drink</option>
+                        <option value="Coffee">Coffee</option>
+                        <option value="Tea">Tea</option>
+                        <option value="Both">Both</option>
+                        <option value="None">None</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <p>Where do u prefer to have Coffee/ Tea?
+                <p>
+                    <select id="dropdown" name="preferredlocation" class="form-control" required>
+                        <option disabled selected value>Select preferred location</option>
+                        <option value="Home">Home</option>
+                        <option value="BrandedStores">Branded Stores</option>
+                        <option value="MobileCoffeeShop">Mobile Coffee Shop</option>
+                        <option value="SmallStores">Small Stores</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>How much are you willing to spend on cup of coffee/tea based on your disposable income?
+                <p>
+                    <select id="dropdown" name="spend" class="form-control" required>
+                        <option disabled selected value>Select an amount</option>
+                        <option value="Php149-199">Php 149-199</option>
+                        <option value="Php199-249">Php 199-249</option>
+                        <option value="Php249-299">Php 249-299</option>
+                        <option value="AbovePhp299">Above Php 299</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>Which cookie flavor is your favorite/would buy more frequently?
+                <p>
+                    <select id="dropdown" name="flavor" class="form-control" required>
+                        <option disabled selected value>Select a flavor</option>
+                        <option value="Original">Original</option>
+                        <option value="ChocoChunk">Choco Chunk</option>
+                        <option value="ChocoLover">Choco Lover</option>
+                        <option value="SaltedCaramel">Salted Caramel</option>
+                        <option value="Matcha">Matcha</option>
+                        <option value="NewFlavorPlease!">NewFlavorPlease!</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>How much are you willing to spend on a box of newly created cookie flavor based on your disposable
+                    income?
+                <p>
+                    <select id="dropdown" name="flavorspend" class="form-control" required>
+                        <option disabled selected value>Select an amount</option>
+                        <option value="Php199-249">Php 199-249</option>
+                        <option value="Php249-299">Php 249-299</option>
+                        <option value="Php299-349">Php 299-349</option>
+                        <option value="AbovePhp349">Above Php 349</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <p>Would you recommend Sweetr Delights to a friend?</p>
+                <label>
+                    <input name="user-recommend" value="Definitely" type="radio" class="input-radio" checked> Definitely
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe
+                </label>
+
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure
+                </label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    What would you like to see improved significantly?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label>
+                    <input name="improve" value="Cookie-Flavors" type="checkbox" class="input-checkbox">
+                    Cookie-Flavors
+                </label>
+
+                <label>
+                    <input name="improve" value="Delivery-Time" type="checkbox" class="input-checkbox">
+                    Delivery-Time
+                </label>
+
+                <label>
+                    <input name="improve" value="Store-Ambiance" type="checkbox" class="input-checkbox">
+                    Store ambiance
+                </label>
+
+                <label>
+                    <input name="improve" value="Coffee-tea-choices" type="checkbox" class="input-checkbox">
+                    Diversified coffee and tea choices
+                </label>
+
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="       Enter your comment/suggestion here..." rows="5" cols="50%"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+
+                    </button>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
